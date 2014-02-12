@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<HTML>
+<HEAD>
+    <TITLE> Add dynamic rows in HTML table </TITLE>
+    <SCRIPT language="javascript">
+        function addRow(tableID) {
+ 
+            var table = document.getElementById(tableID);
+ 
+            var rowCount = table.rows.length;
+            var row = table.insertRow(rowCount);
+ 
+            var cell1 = row.insertCell(0);
+            var element1 = document.createElement("input");
+
+            cell1.appendChild(element1);
+
+ 
+            var cell2 = row.insertCell(1);
+            var element2 = document.createElement("input");
+            
+            cell2.appendChild(element2);
+ 
+ 
+        }
+
+        
+    </SCRIPT>
+
+  
+</HEAD>
+<BODY>
+ 
+    <INPUT type="button" value="Add Row" onclick="addRow('dataTable')" />
+     
+    <TABLE id="dataTable" width="350px" border="1">
+        <TR>
+          
+            <TD> <INPUT type="text" /> </TD>
+            <TD> <INPUT type="text" /> </TD>
+        </TR>
+
+        <TR>
+            <TD> <INPUT type="text" /> </TD>
+            <TD> <INPUT type="text" /> </TD>
+        </TR>
+    </TABLE>
+
+
+ 
+</BODY>
+</HTML>

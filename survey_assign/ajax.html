@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Survey ajax</title>
+		<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="ajax.css">
+		<script type="text/javascript" src="dist/js/bootstrap.js"></script>
+		<script type="text/javascript" src="ajax.js"></script>
+		
+	</head>
+	<body>
+
+		<div class="container">
+			
+			<div id="header">
+
+				
+				<h1>WELCOME TO NEEVTECH SURVEY</h1>
+
+				<h3 class="marginn"> Select the type of questions you want to continue with..</h3>
+				
+				<div class="col-md-3">
+
+					<input type="radio" name="example1" id="example1" value="Example" onclick="ajaxRequest('CheckBox')" />Multi choice question.
+				</div>
+
+				<div class="col-md-3">
+
+					<input type="radio" name="example1" id="example1" value="Example" onclick="ajaxRequest('DropDown')" />Single choice question.
+				</div>
+
+				<div class="col-md-3">
+
+					<input type="radio" name="example1" id="example1" value="Example" onclick="ajaxRequest('SingleText')" />Single line text question.
+				</div>
+
+				<div class="col-md-3">
+
+					<input type="radio" name="example1" id="example1" value="Example" onclick="ajaxRequest('Radio')" />Radio button question.
+				</div>
+
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+
+				
+					
+
+
+				<FORM METHOD=POST ACTION="">  
+					
+					<div id="radioDiv" class="marginn col-md-12">
+						
+					</div>  
+				
+				</FORM> 
+
+				
+			</div>
+			
+		</div>
+
+		
+	</body>
+</html>
